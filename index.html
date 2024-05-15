@@ -1,12 +1,88 @@
-<html>
-    <h1>
-        Hey I am Santiago Usabiaga
-    </h1>
-    <body>
-        <h2>  About me </h2>
-        <p>
-             I am learning HTML hello world
-        </p>
-        <h2> I am working on this website</h2>
-
-    </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Resume Homepage</title>
+    <link href="https://fonts.google.com/specimen/Forum" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+<body>
+    <section class="hero">
+        <div class="content"> 
+            <h1>Santiago Usabiaga</h1>
+            <p>Information Technology</p>
+            <img src="Headshots_L.jpeg" alt="Santiago Usabiaga" class="profile-pic">
+            <a href="SantiagoUsabiagaResume(Website).pdf" target="_blank"    style="--clr:6eff3e"> <button class="enroll-button"  >Resume</button>
+            </a>
+            <!-- <a href="SantiagoUsabiagaResume(Website).pdf" target="_blank" class="enroll-button" style="--clr:6eff3e">
+                Resume
+            </a> -->
+            <!-- <button class="enroll-button" onclick="redirectToDocument()">Resume</button> -->
+            <!-- <a href="#" style="--clr:#1e9bff"> <span>Resume</span>
+            </a> -->
+            <p1>Projects and certifications found below!</p1>
+        </div>
+    </section>
+    <section class="about">
+        <div class="projectsSection">
+            <h1>Projects</h1>
+            <div class="headers">
+                <div class="header-item">
+                    <h2>Python</h2>
+                    <img src="pythonLogo2.PNG" alt="Python logo" class="header-image">
+                    <a href="https://github.com/susabiag/ProjectsPython.git" target="_blank"    style="--clr:6eff3e"> <button class="git-button"  > print("Link")</button>
+                    </a>
+                </div>
+                <div class="header-item">
+                    <h2>Java</h2>
+                    <img src="javaLogo2.PNG" alt="Java logo" class="header-image">
+                    <a href="https://github.com/susabiag/ProjectsJava.git" target="_blank"    style="--clr:6eff3e"> <button class="git-button"  > System.out.println("Link");</button>
+                    </a>
+                </div>
+                <div class="header-item">
+                    <h2>Linux</h2>
+                    <img src="linuxLogo.PNG" alt="Linux logo" class="header-image">
+                    <a href="https://github.com/susabiag/ProjectsLinux.git" target="_blank"    style="--clr:6eff3e"> <button class="git-button"  >echo "Link"</button>
+                    </a>
+                </div>
+                <div class="header-item">
+                    <h2>Tableau</h2>
+                    <img src="tableauLogo.PNG" alt="Tableau logo" class="header-image">
+                    <a href="https://public.tableau.com/app/profile/santiago.usabiaga/vizzes" target="_blank"    style="--clr:6eff3e"> <button class="git-button"  >Link</button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="certifications">
+        <div class="CertSection">
+            <h1>Certifications</h1>
+            <div class="headers-c">
+                <div class="headerCert-item">
+                    <img src="googleBadge.png" alt="googleCert logo" class="googleImage-cert">
+                    <a href="GoogleCybersecurityCertificate_Badge20240223-34-qf87o8.pdf" target="_blank"    style="--clr:6eff3e"> <button class="googleCert-button"  > Verify</button>
+                    </a>
+                </div>
+                <div class="headerCert-item">
+                    <img src="sec.png" alt="comptiaSecCert logo" class="secImage-cert">
+                    <button class="secCert-button"  > Coming Soon!</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="contactMe">
+        <div class="header-contactForm">
+            <form action="https://formspree.io/f/mkndepje" method="POST">
+                <h1>Contact Form</h1>            
+                <input type="text" name="first" placeholder="First Name" autocomplete="off" required>
+                <input type="text" name="last" placeholder="Last Name" autocomplete="off" required>
+                <input type="email" name="email" placeholder="Email Address" autocomplete="off" required>
+                <textarea rows="5" cols="60" name="Message" placeholder="Enter text" autocomplete="off" required></textarea>
+                <button type="submit">Send</button>
+            </form>
+        </div>
+    </section>
+</body>
+</html>
