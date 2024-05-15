@@ -3,7 +3,7 @@ body, html {
     padding: 0;
     font-family: 'Forum';
     color: #ffffff;
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('white.jpeg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://susabiag.github.io/mywebsite/white.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background stationary on scroll */
@@ -55,7 +55,7 @@ section {
     
 }
 .contactMe {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Rawls.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://susabiag.github.io/mywebsite/Rawls.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background stationary on scroll */
