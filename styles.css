@@ -3,11 +3,53 @@ body, html {
     padding: 0;
     font-family: 'Forum';
     color: #ffffff;
-    background: linear-gradient(to bottom, rgb(255, 255, 255,0.01), rgba(255, 255, 255,0.01)), url('https://susabiag.github.io/mywebsite/white3.png');
+    background: linear-gradient(to bottom, rgb(255, 255, 255,0.01), rgba(255, 255, 255,0.01)), url('white3.png');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background stationary on scroll */
     text-align: center;
+}
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    padding: 10px 20px;
+    z-index: 1000;
+    background: transparent; /* Start with a transparent background */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition for background color */
+    border-radius: 0 0 10px 10px;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.sidebar li {
+    padding: 0 15px;
+}
+
+.sidebar a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: color 0.3s ease; /* Smooth transition for color change */
+}
+
+.sidebar a:hover {
+    color: #cccccc;
+}
+.sidebar img {
+    width: 30px;  /* Set the width of the icons */
+    height: 30px; /* Set the height of the icons */
+    padding: 5px; /* Space around the icons */
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+.sidebar a:hover img {
+    opacity: 0.7; /* Change opacity on hover */
 }
 
 section {
@@ -19,7 +61,7 @@ section {
 }
 
 .hero {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://susabiag.github.io/mywebsite/Rawls.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Rawls.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background stationary on scroll */
@@ -55,7 +97,7 @@ section {
     
 }
 .contactMe {
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://susabiag.github.io/mywebsite/Rawls.jpg');
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('Rawls.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Keeps the background stationary on scroll */
@@ -78,14 +120,31 @@ section {
 .content h1 {
     font-size: 3rem;
     font-weight: 700;
+    margin-top: 10px; /* Reduced for less space above */
+    margin-bottom: 2px; /* Reduce space below the name */
 }
 
 .content p {
-    font-size: 2rem; /*Font Size Information Technology*/
-    margin-top: 10px;
+    font-size: 1.7rem; /*Font Size Information Technology*/
+    margin-top: 0.1px; /* Reduce or remove space above */
+    margin-bottom: 20px;
 }
 .content p1{
-    font-size: 1rem; 
+    font-family: sans-serif;
+    text-align: justify;
+    text-justify: inter-word;
+    width: 62%; /* Adjust width as needed */
+    height: 18%;
+    background: rgba(255, 255, 255, 0.266); /* Optional: adds a white background with some opacity */
+    padding: 20px; /* Adds some padding around the text */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0);
+    border-radius: 15px;
+    font-size: 1.25rem;
+    margin-top: 20px; /* Increased for more space above */
+    margin-bottom: 40px; /* Increased to separate more from the Resume button */
+}
+.content p2{
+    font-size: 1.3rem;
     margin-top: 10px;
 }
 
@@ -354,6 +413,14 @@ button[type="submit"] {
 button[type="submit"]:hover {
     background-color: #45a049;
 }
+
+
+
+
+
+
+
+
 
 
 
